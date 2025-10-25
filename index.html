@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cambio Climático y sus Consecuencias</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Cambio Climático y sus Consecuencias</h1>
+        <nav>
+            <a href="#introduccion">Introducción</a> |
+            <a href="#causas">Causas</a> |
+            <a href="#consecuencias">Consecuencias</a> |
+            <a href="#muertes">Muertes</a> |
+            <a href="formularioCC.php">Cuestionario Climático</a>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+
+        <aside class="sidebar">
+            <img src="imagenes/glaciares.jpg" alt="Glaciares derritiéndose" />
+            <h3>Datos clave sobre el clima</h3>
+            <p>La temperatura media global ha aumentado más de ~1 °C respecto a la era preindustrial; gran parte del
+                calentamiento es atribuible a actividades humanas. </p>
+
+            <h3>Recursos rápidos</h3>
+            <a href="https://www.ipcc.ch/report/ar6/wg1/" target="_blank" rel="noopener">IPCC — AR6 (WG1): Evidencia
+                física del cambio climático</a><br /><br />
+        </aside>
+
+        <main class="principal">
+            <div id="bloque1">
+                <h2>Formulario</h2>
+                <p>Mucho texto formulario mucho texto formulario mucho texto formulario mucho texto formulario
+                    mucho texto formulario mucho texto formulario mucho texto formulario mucho texto formulario
+                </p>
+            </div>
+            <form action="formulario.php" method="GET" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Encuesta sobre el Cambio Climático</legend>
+
+                    <!-- Input de texto -->
+                    <label for="texto1"><strong>Texto 1:</strong></label>
+                    <input type="text" name="texto1" maxlength="20">
+
+                    <!-- Input de texto -->
+                    <label for="texto2"><strong>Texto 2:</strong></label>
+                    <input type="text" name="texto2" maxlength="5">
+
+                    <!-- Select -->
+                    <label for="select1"><strong>Select 1:</strong></label>
+                    <select name="select1">
+                        <option value="valor1">Valor 1</option>
+                        <option value="valor2" selected>Valor 2</option>
+                        <option value="valor3">Valor 3</option>
+                    </select>
+
+                    <!-- Botón de enviar -->
+                    <button type="submit">Enviar</button>
+
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <h1>Cambio Climático y sus Consecuencias</h1>
+    </footer>
+
+</body>
+
+</html>
