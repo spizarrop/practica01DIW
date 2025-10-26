@@ -3,61 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cambio Climático y sus Consecuencias</title>
+    <title>Explorando el Universo</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
     <header class="header">
-        <h1>Cambio Climático y sus Consecuencias</h1>
+        <h1>Explorando el Universo</h1>
         <nav>
-            <a href="#introduccion">Introducción</a> |
-            <a href="#causas">Causas</a> |
-            <a href="#consecuencias">Consecuencias</a> |
-            <a href="#muertes">Muertes</a> |
-            <a href="formularioCC.php">Cuestionario Climático</a>
+            <a href="#inicio">Inicio</a> |
+            <a href="#sistemasyGalaxias">Sistemas y Galaxias</a> |
+            <a href="#fenomenosCosmicos">Fenómenos Cósmicos</a> |
+            <a href="#contacto">Contacto</a> |
+            <a href="formularioCC.php">Formulario</a>
         </nav>
     </header>
 
     <div class="contenedor">
 
         <aside class="sidebar">
-            <img src="imagenes/glaciares.jpg" alt="Glaciares derritiéndose" />
-            <h3>Datos clave sobre el clima</h3>
-            <p>La temperatura media global ha aumentado más de ~1 °C respecto a la era preindustrial; gran parte del
-                calentamiento es atribuible a actividades humanas. </p>
-
-            <h3>Recursos rápidos</h3>
-            <a href="https://www.ipcc.ch/report/ar6/wg1/" target="_blank" rel="noopener">IPCC — AR6 (WG1): Evidencia
-                física del cambio climático</a><br /><br />
+            <img src="imagenes/galaxia.jpg" alt="Galaxia Espiral" />
+            <h3>¿Que es esto?</h3>
+            <p>
+                El universo es una sinfonía de energía, movimiento y silencio. A través de los telescopios observamos
+                luces que viajaron millones de años para alcanzarnos. En cada punto luminoso hay una historia: un sol
+                lejano, un sistema de mundos, una posible forma de vida esperando ser descubierta. El espacio no solo
+                está allá afuera, también vive en nuestra curiosidad, en el impulso eterno de mirar hacia arriba y
+                preguntarnos qué hay más allá.
+            </p>
+            <a href="https://www.nasa.gov/es/" target="_blank" rel="noopener">Universo curioso de la
+                NASA</a><br /><br />
         </aside>
 
         <main class="principal">
             <div id="bloque1">
                 <h2>Formulario</h2>
-                <p>Mucho texto formulario mucho texto formulario mucho texto formulario mucho texto formulario
-                    mucho texto formulario mucho texto formulario mucho texto formulario mucho texto formulario
+                <p>
+                    El universo sigue expandiéndose, y con él, nuestro deseo de entenderlo. Si quieres ser parte de esta
+                    comunidad de exploradores espaciales, completa el siguiente formulario. Comparte tus intereses, tus
+                    preguntas o tus teorías sobre el cosmos. No importa si eres un astrónomo aficionado o simplemente
+                    alguien que se maravilla con el cielo nocturno; todos tenemos un lugar bajo las estrellas. Al enviar
+                    tus datos, estarás uniéndote a una red de soñadores que miran al infinito con los pies en la Tierra
+                    y la imaginación en las estrellas.
                 </p>
             </div>
             <form action="formulario.php" method="GET" enctype="multipart/form-data">
                 <fieldset>
-                    <legend>Encuesta sobre el Cambio Climático</legend>
+                    <legend>Únete a la Misión Estelar</legend>
 
                     <!-- Input de texto -->
-                    <label for="texto1"><strong>Texto 1:</strong></label>
-                    <input type="text" name="texto1" maxlength="20">
+                    <label for="texto1"><strong>Nombre:</strong></label>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre estelar" required>
 
                     <!-- Input de texto -->
-                    <label for="texto2"><strong>Texto 2:</strong></label>
-                    <input type="text" name="texto2" maxlength="5">
+                    <label for="texto2"><strong>Email:</strong></label>
+                    <input type="text" name="correo" placeholder="Correo electrónico" required>
 
                     <!-- Select -->
-                    <label for="select1"><strong>Select 1:</strong></label>
-                    <select name="select1">
-                        <option value="valor1">Valor 1</option>
-                        <option value="valor2" selected>Valor 2</option>
-                        <option value="valor3">Valor 3</option>
+                    <label for="select1"><strong>¿Que planeta te intriga más?</strong></label>
+                    <select name="planeta">
+                        <option value="">Selecciona tu destino</option>
+                        <option value="marte">Marte</option>
+                        <option value="jupiter">Júpiter</option>
+                        <option value="saturno">Saturno</option>
+                        <option value="andromeda">Galaxia de Andrómeda</option>
+                        <option value="agujero_negro">Agujero Negro</option>
+                        <option value="nebulosa_orion">Nebulosa de Orión</option>
                     </select>
 
                     <!-- Botón de enviar -->
@@ -69,7 +81,7 @@
     </div>
 
     <footer class="footer">
-        <h1>Cambio Climático y sus Consecuencias</h1>
+        <h1>Explorando el Universo</h1>
     </footer>
 
 </body>
