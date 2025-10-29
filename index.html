@@ -9,7 +9,7 @@
 
 <body>
 
-    <header class="header">
+    <header id="header">
         <h1>Explorando el Universo</h1>
         <nav>
             <a href="#inicio">Inicio</a> |
@@ -19,12 +19,11 @@
         </nav>
     </header>
 
-    <div class="contenedor">
+    <div id="contenedor">
 
-        <aside class="sidebar">
+        <aside id="sidebar">
             <img src="imagenes/galaxia.jpg" alt="Galaxia Espiral" />
             <h3>¿Que es esto?</h3>
-            <!--
             <p>
                 El universo es una sinfonía de energía, movimiento y silencio. A través de los telescopios observamos
                 luces que viajaron millones de años para alcanzarnos. En cada punto luminoso hay una historia: un sol
@@ -32,12 +31,11 @@
                 está allá afuera, también vive en nuestra curiosidad, en el impulso eterno de mirar hacia arriba y
                 preguntarnos qué hay más allá.
             </p>
-            -->
             <a href="https://www.nasa.gov/es/" target="_blank" rel="noopener">Universo curioso de la
                 NASA</a><br /><br />
         </aside>
 
-        <main class="principal">
+        <main id="principal">
             <div id="bloque1">
                 <h2>Formulario</h2>
                 <p>
@@ -51,14 +49,14 @@
             </div>
             <form action="formulario.php" method="GET" enctype="multipart/form-data">
                 <fieldset>
-                    <legend>Únete a la Misión Estelar</legend>
+                    <h2>Únete a la Misión Estelar</h2>
 
                     <!-- Input de texto -->
-                    <label for="texto1"><strong>Nombre:</strong></label>
+                    <label for="nombre"><strong>Nombre:</strong></label>
                     <input type="text" name="nombre" placeholder="Ingresa tu nombre estelar" required>
 
                     <!-- Input de texto -->
-                    <label for="texto2"><strong>Email:</strong></label>
+                    <label for="correo"><strong>Email:</strong></label>
                     <input type="text" name="correo" placeholder="Correo electrónico" required>
 
                     <!-- Select -->
@@ -81,7 +79,7 @@
         </main>
     </div>
 
-    <footer class="footer">
+    <footer id="footer">
         <h1>Explorando el Universo</h1>
     </footer>
 

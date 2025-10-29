@@ -8,88 +8,77 @@ body {
 }
 
 /* Header */
-.header {
+#header {
     background: linear-gradient(90deg, #0077b6, #00b4d8);
     color: #fff;
     text-align: center;
     border: 2px solid #004b75;
-    margin: 10px 0;
     padding: 20px;
-    border-radius: 10px;
 }
 
 /* Barra de navegación */
-.header nav a {
+#header nav a {
     color: #fff;
     font-weight: bold;
     margin: 0 10px;
     text-decoration: none;
 }
 
-.header nav a:hover {
+#header nav a:hover {
     text-decoration: underline;
 }
 
-/* Contenedor de sidebar + principal */
-/* Tamaño total: 1200 = 246(sidebar) + 954(principal) */
-.contenedor {
+/* Contenedor */
+#contenedor {
     width: 1200px;
     overflow: hidden;
 }
 
 /* Sidebar lateral */
-/* Tamaño sidebar: 202(ancho) + 4(2+2 bordes) + 10(margen derecho) + 30(15+15 padding) = 246 */
-.sidebar {
+#sidebar {
     float: left;
-    width: 202px;
+    width: 214px;
     border: 2px solid #4caf50;
-    margin: 10px 10px 10px 0;
-    /* Arriba | Derecha | Abajo | Izquierda */
     padding: 15px;
-    border-radius: 10px;
     background: #d9f5d2;
     height: 700px;
     position: relative;
 }
 
-.sidebar p {
+#sidebar p {
     text-indent: 20px;
 }
 
-.sidebar h3 {
+#sidebar h3 {
     text-decoration: underline;
 }
 
-.sidebar a{
-    position: relative;
-    bottom: 1px;
+#sidebar a {
+    position: absolute;
+    bottom: 10px;
 }
 
 /* Contenido principal */
-.principal {
+#principal {
     float: left;
     width: 920px;
     border: 2px solid #219ebc;
-    margin: 10px 0;
     padding: 15px;
-    border-radius: 10px;
     background: #e6f0ff;
     height: 700px;
 }
 
-.principal h2 {
+#principal h2 {
     text-decoration: underline;
 }
 
 /* Footer */
-.footer {
+#footer {
     background: #2b2d42;
     color: #fff;
     text-align: center;
     border: 2px solid #1a1c2c;
-    margin: 10px 0;
     padding: 15px;
-    border-radius: 8px;
     clear: both;
 }
 
@@ -128,20 +117,12 @@ form {
     margin: 20px auto;
     padding: 20px;
     border: 2px solid #2196F3;
-    border-radius: 10px;
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
 }
 
 fieldset {
     border: none;
-}
-
-legend {
-    font-size: 22px;
-    font-weight: bold;
-    color: #1565C0;
-    margin: 0 0 10px 0;
 }
 
 label {
@@ -156,7 +137,6 @@ select {
     padding: 8px;
     margin: 5px 0 0 0;
     border: 1px solid #ccc;
-    border-radius: 6px;
     box-sizing: border-box;
 }
 
@@ -167,7 +147,6 @@ input[type="text"] {
 button {
     display: block;
     margin: 15px 0 0 0;
-    border-radius: 6px;
     font-size: 16px;
     width: 100px;
 }
